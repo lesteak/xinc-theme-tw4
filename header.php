@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <?php get_template_part('templates/header/favicon'); ?>
   <?php wp_head(); ?>
+  
 </head>
 <body <?php body_class('min-h-dvh bg-base-100 text-base-content'); ?>>
   <header class="border-b border-base-300">
@@ -59,4 +60,5 @@
       ?>
     </div>
   </header>
-  <main class="container mx-auto py-10">
+  
+  <main class="container mx-auto py-10 flex-20">
