@@ -1,12 +1,25 @@
 <?php
-
-//register Menus
+/**
+ * Register Menus
+ */
+add_filter('show_admin_bar', '__return_false');
 add_action('after_setup_theme', function () {
     register_nav_menus([
         'primary' => __('Primary Menu', 'xinc-theme'),
+        'footer' => __('Footer Menu', 'xinc-theme'),
     ]);
 });
 
+/**
+ * Add icons in footer
+ */
+add_filter('show_admin_bar', '__return_false');
 add_action('wp_footer', function () {
   echo file_get_contents( get_template_directory() . '/assets/icons/icons.svg' );
 });
+
+
+/**
+ * Remove admin bar
+ */
+add_filter('show_admin_bar', '__return_false');

@@ -7,7 +7,7 @@
   <?php wp_head(); ?>
   
 </head>
-<body <?php body_class('min-h-dvh bg-base-100 text-base-content'); ?>>
+<body <?php body_class('min-h-dvh bg-base-100 text-base-content flex flex-col'); ?>>
   <header class="border-b border-base-300">
     <div class="navbar container mx-auto">
       <div class="flex-1 flex items-center">
