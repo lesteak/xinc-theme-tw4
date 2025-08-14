@@ -1,0 +1,20 @@
+/* 1) Load Tailwind (v4) */
+@import "tailwindcss";
+
+/* 2) Tell Tailwind where to scan for classes (relative to this file) */
+@source "../../**/*.php";
+@source "../../**/*.{js,html}";
+
+/* 3) Load plugins (new v4 syntax). This installs daisyUI v5 */
+@plugin "daisyui";
+
+/* 4) (Optional) Pick/limit themes, set default + prefers-dark */
+@plugin "daisyui" {
+  themes: light --default, abyss --prefersdark, business;
+}
+
+/* 5) (Optional) Define design tokens using @theme (v4) */
+@theme {
+  --font-sans: ui-sans-serif, system-ui, Inter, "Segoe UI", Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  --color-brand-500: oklch(0.67 0.16 240);
+}
